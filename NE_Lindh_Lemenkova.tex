@@ -1,0 +1,84 @@
+\documentclass[USenglish,twocolumn]{article}
+
+\usepackage[utf8]{inputenc}%(only for the pdftex engine)
+%\RequirePackage[no-math]{fontspec}%(only for the luatex or the xetex engine)
+\usepackage[big]{dgruyter}
+%\graphicspath{{figures/}} % path to folder with figures
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{lipsum} 
+%\usepackage{blindtext}
+%\usepackage[showframe]{geometry}
+\usepackage{graphicx}
+\usepackage[super]{nth}
+\usepackage{gensymb}
+
+\begin{document}
+ 
+\articletype{Research Article{\hfill}Open Access}
+\author[1]{Per Lindh}
+\author*[2]{Polina Lemenkova}
+  \affil[1]{$^1$ Swedish Transport Administration, Gibraltargatan 7, Malmö, Sweden \\ $^2$ Lund University, Division of Building Materials, Box 118, SE- 221-00, Lund, Sweden, E-mail: per.a.lindh@gmail.com}
+  \affil[2]{$^3$ Université Libre de Bruxelles (ULB), École polytechnique de Bruxelles (Brussels Faculty of Engineering), Laboratory of Image Synthesis and Analysis (LISA). Campus de Solbosch -- CP 165/57, Av. F. D. Roosevelt 50, B-1050 Brussels, Belgium, E-mail: polina.lemenkova@ulb.be}
+
+  \title{\huge Title}
+  
+ \runningtitle{Title}
+ \runningauthor{P. Lindh, P. Lemenkova}
+
+\begin{abstract}
+{Text.}
+\end{abstract}
+  \keywords{keyword; keyword; keyword}
+ 
+%  \classification[PACS]{}
+ % \communicated{...}
+ % \dedication{...}
+
+  \journalname{Nonlinear Engineering}
+
+\DOI{DOI}
+  \startpage{1}
+  \received{Aug 31, 2022}
+  \revised{..}
+  \accepted{..}
+
+  \journalyear{2022}
+  \journalvolume{x}
+  \journalissue{x}
+  
+\maketitle
+
+\section{Introduction}
+
+
+\vspace{10pt}
+
+\noindent
+\textbf{Author contributions}: All authors have accepted responsibility for the entire content of this manuscript and approved its submission.
+
+\vspace{10pt}
+
+\noindent
+\textbf{Conflict of interest}: The authors state no conflict of interest.
+
+\begin{acknowledgement}
+We thank the anonymous reviewers for their valuable comments. 
+\end{acknowledgement}
+
+%\newpage
+%\bibliographystyle{IEEEtran}
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{plain}
+\bibliography{References_NE.bib}
+%\nocite*{}
+
+%\newpage
+%\appendix
+%\label{App1}
+%\newpage
+
+\addcontentsline{toc}{section}{Appendix}
+\section*{Appendix}
+
+\end{document}
