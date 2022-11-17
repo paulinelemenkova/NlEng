@@ -1,0 +1,348 @@
+\documentclass[USenglish,twocolumn]{article}
+
+\usepackage[utf8]{inputenc}%(only for the pdftex engine)
+%\RequirePackage[no-math]{fontspec}%(only for the luatex or the xetex engine)
+\usepackage[big]{dgruyter}
+%\graphicspath{{figures/}} % path to folder with figures
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{lipsum} 
+%\usepackage{blindtext}
+%\usepackage[showframe]{geometry}
+\usepackage{graphicx}
+\usepackage[super]{nth}
+\usepackage{gensymb}
+\usepackage{array}
+\usepackage{tabularx}
+\graphicspath{{figures/}} % path to folder with figures
+%\usepackage[usenames, dvipsnames]{color}
+
+\begin{document}
+ 
+\articletype{Research Article{\hfill}Open Access}
+\author[1]{Per Lindh}
+\author*[2]{Polina Lemenkova}
+  \affil[1]{$^1$ Swedish Transport Administration, Gibraltargatan 7, Malmö, Sweden, E-mail: per.lindh@trafikverket.se \\ $^2$ Lund University, Lunds Tekniska Högskola LTH (Faculty of Engineering), Department of Building and Environmental Technology, Division of Building Materials, Box 118, SE- 221-00, Lund, Sweden, E-mail: per.lindh@byggtek.lth.se}
+  \affil[2]{$^3$ Université Libre de Bruxelles (ULB), École polytechnique de Bruxelles (Brussels Faculty of Engineering), Laboratory of Image Synthesis and Analysis (LISA). Campus de Solbosch, ULB -- LISA CP165/57, Av. F. D. Roosevelt 50, B-1050 Brussels, Belgium, E-mail: polina.lemenkova@ulb.be}
+
+  \title{\huge Shear bond and compressive strength of clay stabilized with lime/cement jet grouting and deep mixing: a case of Norvik, Nynäshamn}
+  
+ \runningtitle{Shear bond and compressive strength of clay stabilized with jet grouting}
+ \runningauthor{P. Lindh, P. Lemenkova}
+
+\begin{abstract}
+{In this article we presented a framework to explore strength characteristics of soil using applied geophysical methods. The core of our work is a systematic assessment of the effects on clay stabilization from various binders on shear and compressive strength, and to analyse P-wave velocities. The binders were combined from four stabilizing agents: 1) Cem II/A, a Portland limestone cement, 2) burnt lime; 3) lime kiln dust (LKD) limited up to 50\%; 4) cement kiln dust (CKD). Clay was added in various ratios in four recipes of various binders to evaluate the performance of soil with various clay content against binders (80, 100 and 120 kg per $m^3$ of clay). Shear strength  shown a nonlinear dependance as an exponential curve with P-waves. Natural frequency analysis was modelled to simulate resonant frequencies as eigen values. Variations in strength proved that Cem II/A-M (Recipe A, 100\% Cem II) has the best performance for weak soil stabilization followed by the combinations: Recipe B (70\% Cem II/A-M, 30\% LKD), Recipe C with added 80\% Cem II/A-M and 20\% CKD and Recipe D (70\% Cem II/A-M 30\% CKD). The study contributes to the development of methods of soil testing in civil engineering.}
+\end{abstract}
+  \keywords{civil engineering; foundation; soil stabilization}
+ 
+%  \classification[PACS]{}
+ % \communicated{...}
+ % \dedication{...}
+
+  \journalname{Nonlinear Engineering}
+
+\DOI{DOI}
+  \startpage{1}
+  \received{Sep 1, 2022}
+  \revised{..}
+  \accepted{..}
+
+  \journalyear{2022}
+  \journalvolume{x}
+  \journalissue{x}
+  
+\maketitle
+
+\section{Introduction}
+
+\subsection{Background}
+
+The mechanical performance of soil under load stress has a complex and non-linear behaviour. This is largely controlled by a variety of inner and external factors responsible for soil formation \cite{Jenny,Buol,Winterkorn1991a}. The environmental factors (temperature, humidity) are determined by regional factors, and control the distribution of soil minerals \cite{Righi1995,Nesse}. Inner properties of soil vary owing to the complex structure of soil as a porous media with varied mineral content, texture, density, porosity, viscosity, elasticity, compactness and grain size \cite{Kaellenetal2014,Kallenetal2016}. As the behaviour of weak soil presents a serious problem in industry, it should be stabilized prior to constructions. 
+
+Analysis of the performance of stabilized soil is a challenging task, since the addition of various combinations of binders may result in different response from soil, depending on its structure and mineral content. For instance, the performance of fine-grained \cite{Mitchell} or course-grained soil \cite{Wangetal2009} differs, which is caused by the differences in mineral content and physico-chemical properties of soils \cite{Lambe}. As a result, different binder are needed for different types of soil \cite{Lindh2001,Guoetal2003}. Many solutions exist evaluating soil properties, each based on different techniques \cite{Lindh2004,Glendinning,Lindh202201,NIGITHA2022,Lemenkov2021c}. It has been shown that universal methods for soil stabilization do not exist and require laboratory testing and control for different types of soil and binders.
+
+Testing shear bond and compressive strength of soil aims to estimate the parameters of soil performance under load regarding the content of binders and type of soil. This is primarily intended at evaluation of soil cementation upon stabilization with various binders. It can be done either by pure binders of by blended mixtures with various components of stabilizing agents \citep{HOV2022101162,Bakaiyang}. The jet propagation in the soil is performed from the injection nozzle and results in cementation of soil due to the interaction of particles between the jet of binders and soil. The injected fluid penetrates into the soil, increases pore pressures and reduces grain contact in a soil skeleton \cite{Modonietal2006,Croceetal2014}. This results in the increased stiffness, density and strength of soil stabilized by jet grouting \cite{Modonietal2019}.
+
+The jet grouting technique is a soil consolidation technique based on grouting of fluid jet of cementitious slurry from a nozzle through a jet column into the ground \cite{Mosiici}. Major parts of the jetting mechanism include the grout pipe connected to the drilling device, monitor, rod and nozzle \cite{CovilSkinner}. A borehole is drilled up to the targeted depth with cementitious slurry injected to the ground through a column and mixed with soil. The drill stem is then removed slowly from the borehole \cite{Njock}. Originally developed in the UK, jet grouting has now been largely used for soil hardening in engineering works worldwide \cite{Morey,Yoshida,Lunardi}. 
+
+The advantages of jet grouting include a straightforward and effective implementation, economic benefits, and improved technological solutions for improving mechanical properties of soil \cite{modoni2012analysis}. Jet technology increases bearing capacity of soils and reduces settlements of foundations, which is the target goal in geotechnical works \cite{ModoniBzowka}. Technical, economic and environmental advantages of jet grouting \cite{Pinto} made it is useful in diverse applications in civil engineering: tunnelling \cite{Croce}, airports \cite{Hamidi,Lewis}, metro and subways \cite{Farretal2012,Chuetal,Mihalis}. Technical advantage of jet grouting is its flexibility \cite{Newman} and applicability in all major types of soil: silt \cite{Chuetal2012,HoHu}, clay \cite{Hoetal2005,Ho2009}, sand \cite{Hanetal2012}.
+
+Deep soil mixing technique is an \emph{in situ} method of ground improvement, which is based on mechanical mixing of soil with cementitious binder \cite{Kitazume,PorbahaetalA}. By deep mixing, soils are blended systematically with cementitious binders using column technique using drilling and jet grouting \cite{Larssonetal2015,Larsson}. Deep mixing involves the use of either wet of dry mixing techniques. While wet mixing injects slurry of cementitious binders, dry mixing uses powder binders that react with the water in the soil \cite{PorbahaetalB}. It is especially useful for cohesive fine-grained soil, e.g., clay \cite{Dahlstroem,Xieetal2012}, as soft and weak soil has a high moisture content and loose structure that can be stabilised using deep mixing \cite{PorbahaetalC}. Existing cases of deep soil mixing report increased shear modulus \cite{Fangetal2001}, reduced compressibility and improved parameters of the compressive strength \cite{Mypati}, reduced ground settlement and improved soil stability \cite{Bergado}.
+
+The strength characteristics of soil has a key role in construction, as they control the performance of ground in terms of service ability \cite{Munfakh}. The effectiveness of soil stabilization depends on many factors: soil type, stabilizing agent, curing time and temperature, water content and drainage conditions \cite{Winterkorn1991b}. For geotechnical purpose, critical factors include the content of binder, water-binder ratio \cite{Robertson,Zhang,Yangetal2010}, and confining pressure \cite{Rabbi,Xuetal2022,Huangetal2022}. 
+
+\subsection{Related Work} 
+
+There is an increasing trend to explore material properties by geophysical methods applied for civil engineering domain, in particular using nonlinear wave analysis. Thus, stress changes in materials can be evaluated through acoustic-wave analyses using either elastic–acoustic waves  \cite{Jiangetal2017} or coda-wave interferometry and nonlinear acoustic waves \cite{Jiangetal2021}, which are sensitive to the microstructural changes in materials. The acoustic emission technique and the extraction of resonant frequencies can be effectively used for nondestructive dynamic testing of damage in cementitious structures \cite{Lacidogna}. The ultrasonic shear-horizontal waves can be used for estimating cracks in construction elements, which is of critical importance for evaluating the structural safety \cite{LinWang}.
+
+It is known that geophysical properties of P-wave velocity correlate with key engineering characteristics of soil structure, such as rigidity, compressibility, and density. In turn, these are related to a number of interrelated parameters of soil: elasticity, which depends on density and porosity, viscosity, stiffness and compactness \cite{askeland2008essentials,askeland2005science}. The velocity of P-wave at which it travels through a soil specimen can be measured using ultrasonic methods using accelerators, transducers and receivers. The velocity of the P-waves has strong positive relationships with UCS \cite{Sarno,Pellet}. Generally speaking, the higher the strength of soil is, the higher is the P-wave velocity. As curing time and binder content affect soil strength, it can be used with regard to P-wave velocity as related parameters. 
+
+Shear and compressional wave velocities vary with different effective stress and porosity, which enables to find a correlation between dominant frequency and inter-particle voids of soil \cite{Gheibi}. With this regard, the investigation of the ultrasonic wavelength can be performed in various media, including compacted clayey and sandy soil \cite{Sarroetal2021}, fluid-saturated poroelastic soil \cite{Shietal2017}, or in reinforced concrete structures \cite{Carpinteri,Aggelis} used in construction industry. One of these approaches is testing the shear bond and compressive strength of stabilized ground samples. Stabilizing soil can be performed by a wide variety of binders, among which many applications use lime \cite{DiSanteetal2020} and cement \cite{Lemenkova202222}. Lime-cement treatment is effective specifically for fine-grained type of soil: clay or silt \cite{Brice,Heath,Addison,Rogers,Solanki}.  
+
+\subsection{Study Objectives}
+
+The Swedish Geotechnical Institute (SGI) has performed laboratory determinations and evaluation of strength properties on stabilized clay from Norvik, Nynäshamn municipality. The works have been carried out on behalf of the Geomind KB, SMA and CEMEX. The research aim was to test different binder combinations for depth stabilization and for jet grouting of clay. The tests included two types: 1) mixing tests for deep stabilization; 2) mixing tests for jet grouting. 
+
+This paper focuses on the estimation of shear bond and compressive strength of clay collected in the Norvik, Nynäshamn Municipality, located in the central region of Sweden, Stockholm County. Soil of the cold regions is subject to harsh environmental setting and has specific properties caused by ambient temperature below zero and repetitive seasonal freezing \cite{LindhWinter,Lemenkov2021b,Lemenkov2021a,Sato}. Such soil should be stabilized before the use in industrial works. The methods included stabilization of specimens with lime/cement mixtures by deep mixing and jet grouting and seismic measurements of P-wave velocity. 
+
+%\newpage
+
+\section{Methodology}
+
+\subsection{Mixture of lime/cement in a binder}
+To evaluate binder combinations for deep stabilization, an experimental setup of simplex lattice was applied using existing methodology \citep{Montgomery2019,Myres}. The purpose of using this type of statistical trial planning is to minimize the number of trials while maintaining statistical significance and to ensure that both positive and negative interactions between the binder components are detected. Three different binders have been used in this study: 1) cement type Cem II/A, which is a Portland limestone cement consisting of Portland clinker (K) (content 80\%-94\%) and limestone (LL), 2) burnt lime named Ql in the figures ('quicklime'); 3) lime kiln dust (LKD). 
+
+The test surface in a three-factor simplex lattice is structured as a triangle, Figure \ref{Fig:01}. Pure binders (100\%) are represented as a corners in the triangle and a mixture of two-three binders along the triangle's stripes, as a combination of all the binders inside the triangle of the model. The selected trial points are marked as blue circles, which correspond to tested binder combinations. The mutual ratio between the binders varies depending on where the test point is located within the triangle model. 
+
+In such a way, nine different binder combinations were formed from the mix of these three binders.The full circles represent both test point and extra reference samples, Figure \ref{Fig:01} a). The design according to a restricted simplex lattice is shown in Figure \ref{Fig:01} a) where the restriction consists in maximizing the share of LKD to 50\%. The test was used for the different amounts of binder: 80, 100 and 120 kg per $m^3$ of clay. The experimental design for the amount of binder 100 kg of binder per $m^3$ of clay was supplemented with internal points. The internal points increase the resolution of the response surface. Red ring shows point that were excluded from the analysis, Figure  \ref{Fig:01} b). Each trial point was performed as a double trial with the corners of the triangle representing to 100\% of only one binder. The center of the triangle corresponds to 33\% of the three different binders. The points on the lower border of the triangle correspond to either a pure binder, (cf. Cem II/A or Ql) or, alternatively, to a mixture of 50\% Cem II/A and 50\% Ql. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_01.jpg}\\
+  \caption{Experimental design (a): according to a restricted simplex lattice; (b): supplemented with internal points}\label{Fig:01}
+\end{figure}
+
+The curing time for the reference samples (cement/lime 50/50) were determined to be 7, 14, 21 and 28 days. Extra reference tests have been carried out for calibration of seismic measurement in relation to compressive strength on days 7 and 14, Figure \ref{Fig:01} b). Moreover, some extra specimens were produced for compression tests on day 80. The choice of 80 days is explained by the fact that the samples were stored at T=7\degree C, which corresponds to the average ground temperature in central Sweden in the tested study area, . At this storage temperature and a curing time of 80 days, this corresponds to the equivalent of 560 \degree days, which corresponds to 28 days of storage at 20°C. The tests were carried out according to the laboratory guidance of the SGI applied in previous experiments \cite{Lindh2021a} and existing methods of using lime/cement columns for deep column stabilization \cite{CARLSTEN1996355}.
+
+\subsection{Seismic measurements}
+Seismic measurements were performed as a free-free resonant column test measuring P-wave velocity of the specimen using existing methodology applied in previous studies \citep{Lindh202210,Lindh202102}. The measurements were used on all specimens modelled in previous step in a simplex test. By producing extra specimens that were used as reference specimens, i.e., for the determination of both P-wave velocity and shear strength on days 7 and 14, a reference to the P-wave velocity of the remaining specimens was used for a correlation to the shear strength of the samples. The correlation between the P-waves and UCS has previosly been used for surface stabilized samples \cite{Rydenetal2006,Rydenetal2016}. 
+
+The velocity of P waves in isotropic and homogeneous solids, such as soil, is given by the following formula: 
+
+\begin{equation} \label{eq2}
+	\upsilon_p=\sqrt{\frac{K+\frac{4}{3}\mu}{\rho} }
+\end{equation}
+
+where \emph{K} is the bulk modulus (incompressibility), $\mu$ is the shear modulus (rigidity), $\rho$ is the density of soil through which the wave propagates \cite{Fowler}. From this equation it is seen that P-wave velocity depends on key material characteristics -- rigidity, compressibility and density, which in turn are related to strength characteristics.
+
+The P-wave is the axial wave passing through the cylindrical specimen. The vibration was excited by a hammer which stroke on one end of the specimen and measured as P-waves by the accelerator device on another end, respectively. The P-wave has been correlated against the shear strength of the stabilized material. Coupling between the P-wave and the constrained modulus of the material $M_x$, shows the elastic moduli which describes isotropic homogeneous materials, as represented by the Equation \ref{eq2}.
+
+\begin{equation} \label{eq2}
+	M_x=\rho_x V_P^2
+\end{equation}
+
+where $V_P$ is the velocity of a P-wave and $\rho$ is the density of soil specimen through which the elastic wave is propagating \cite{Mavko}. The specifics of these test was that the tested sleeves were not completely filled with soil material. The empty sleeves had eigenfrequencies close to the eigenfrequencies of the test bodies. This meant that the frequency in generated oscillation modes deviated significantly from the natural frequency of the samples located in sleeves. Since the natural frequency of the sleeves dominated, it was these frequencies that were measured, cf. section \emph{4.3 Simulation of seismic measurements}. This meant that none of the measurements on the test specimens in sleeves could be evaluated. In contrast, tests performed on the deformed and trimmed specimens demonstrated robust results.
+
+\subsection{Binder recipe for jet grouting}
+Testing of the binder recipes has been carried out partly by the SGI and partly by the CEMEX. The surveys included the three types of tests: 1) Uniaxial Compressive Strength (UCS), 2) Water requirements; 3) Binding time for the four types of soil-binder mixtures: 1) Cem II/A (100\%); 2) Cem II/A/CKD (50\%/50\%); 3) Cem II/A/LKD (50\%/50\%); 4) Cem II/A/LKD/LSfiller (50\%/30\%/20\%). The binder combinations were tested for the jet pillar grouting for reinforcement of soil, and summarised in Table \ref{tab:1} where J=performed test, N=not performed test.
+
+\begin{table}[h!]
+\centering
+\caption{Tested binder combinations for jet grouting column reinforcement. J=performed, N=not performed.}
+\label{tab:1}
+\setlength\tabcolsep{1pt} 
+\smallskip 
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}| l | c | c | c | c |}
+ \hline
+ Name & A & B & C & D \\ \hline
+ Cement (\%) & 100 & 70 & 80 & 70 \\ 
+  LKD (\%) & -- & 30 & -- & -- \\ 
+ CKD (\%) & -- & -- & 20 & 30 \\ 
+ vbt & 1.0 & 1.0 & 1.2 & 1.2 \\
+ Clay (17\%) & J & J & J & N \\
+ Clay 30\% & J & J & J & N \\
+ Clay 37.5\% & J & J & J & N\\
+ Clay 58\% & J & J & J & N \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+The tests carried out by CEMEX comply with the Swedish standards of soil testing EN 196-1 \cite{SIS2016M} and EN 196-3 \cite{SIS2016N}. The conditions involve, among other parameters, that some binders have been mixed with the three parts of the standard sand and half a part water (vbt = 0.5). In the tests carried out at SGI, only water and binder have been mixed and in parts of the tests clay has also been mixed in. This leads to a significant differences in the compressive strength. Furthermore, the test performed by CEMEX is done on prisms and the test performed by SGI is done on cylinders with a diameter of 50 mm and a height of 100 mm.
+
+The binder and water were mixed by the industrial mixer for 5 minutes until a homogeneous mixture was obtained. The mixer is a stainless bowl wit ha capacity of about 5 litres, which was fixed in the mixer frame during mixing, and a stainless steel blade with an axes driven by the electric motor. The mixing starting with specimens, then adding binder and the predetermined amount of water to give an overall required moisture. The samples were then cast into the test moulds. In cases where clay was added, the mixing time was increased to 20 minutes in order to obtain a homogeneous mixture. After 1--3 days of curing, the specimens were de-shaped and trimmed to the correct length. Due to the water separation, the specimens were trimmed mostly on the upper part, because this part was weaker and could be processed more conveniently. There was no water separation in the tested samples containing clay. The testing performed by CEMEX and shown in Table \ref{tab:1}. After the homogenising, mixing and compaction processes, the soil was stabilized and evaluated for strength. 
+
+For jet grouting, cement (CEM II/A-M), LKD and cement kiln dust (CKD) were used as binders and evaluated in terms of their performance. A water binder number (vbt) of 1.0 was used for binder in recipes A and B, and a vbt of 1.2 was used for recipes C and D, respectively. The experiments were carried out with the mixing of clay for the tested binder combinations. The total clay content was 17, 30, 37.5 and 58\% by weight. For binder recipe D, no clay admixtures were carried out due to difficulties in obtaining a homogeneous admixture of clay in that sample and a low compressive strength without clay admixture. Tested binder ratios are reported in Table \ref{tab:1}. Unlike the measurements performed on stabilized soil for lime/cement column reinforcement, all seismic measurements were performed on the specimens without pipes. Furthermore, temperature measurements were carried out according to the thermos method on Cem II (100\%) with a vct of 1.0 and Cem II/LKD (50/50\%) with a vbt of 1.0. Steel thermoses with a liquid volume of 0.5 l were used for the experiment.
+
+The viscosity was determined in recipes A to D without added clay according to the Marsh cone method. The Marsh cone is a workability test for quality control of cement grouts which evaluates the fluidity based on the plastic viscosity and yield stress from the cone geometry of tested specimens \cite{ROUSSEL2005823}. It considers the rheological parameters and the time of flow in performance of soil-cement pastes, since plastic viscosity vary with composition of binders \cite{Banfill,FERRARIS2001245}. In this case, the mixed clay recipes did not passed the funnel in the Marsh cone. 
+
+\section{Results}
+
+\subsection{Lime/cement column stabilization}
+\subsubsection{Strength determination}
+The interaction between lime, cement and LKD demonstrated positive effects on deep stabilization of clay. Most of these binder combinations met the requirements for a minimum shear strength of 200 kPa after 28 days of curing at 7\degree C. The performed tests show that two out of four tested recipes for jet grouting passed the requirement of 3 MPa after 28 days of curing even with a clay mixture of 58\%. In the testing of binder combinations, a reference recipe of Cem II/A-V and quicklime was used in a mutual ratio of 50/50. Evaluated shear strength for the reference samples at different curing times is reported in Figure \ref{Fig:02}.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_02.jpg}\\
+  \caption{Shear strength as a function of curing time for specimens stabilized with a binder combination of CEM II/A and quicklime (50/50). The amounts of binder corresponded to 80, 100 and 120 kg of binder per $m^3$ of clay. The samples are stored in climate rooms with a temperature of 7\degree C.}\label{Fig:02}
+\end{figure}
+
+In order to evaluate the effects from different binder combinations on shear bond and compressive strength of the stabilized material, a test was setup according to simplex lattice. The resulted are presented as a response surface. For a binder quantity corresponding to $80, 100 and 120 kg/m^3,$, the results are reported as response surfaces in Figure \ref{Fig:03} a), b) and c), respectively. The results show a clear positive interaction between various components of stabilizing agents (cement, quicklime and LKD) in a binder combination. Positive interaction means that the components of binder taken together as blends generate a higher strength than would be expected from a linear regression between the effects of the single binders. The model has an  95\% of the explanation rate of variation in shear strength.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_03.jpg}\\
+  \caption{Response surface showing shear strength after 28 days of curing at 7\degree C with varied amount of binders. (a):  80 kg/$m^3$; (b): $100 kg/m^3$; (c): $120 kg/m^3$}\label{Fig:03}
+\end{figure}
+
+The results can be compared with the results from the analysis of the extended trial reported in Figure \ref{Fig:04} which show a slightly lower positive interaction between the binders. Here, we performed the extended number of tests which were setup for the amount of binder $100 kg/m^3$ clay. In the trial set-up with more internal trial points, the resolution increases and the degree of explanation of the model increases from 95\% to 97.5\%1. 
+
+Shear bond strength of all mixtures show a clear trend of increasing with the added amount of binder. Thus, the maximal values for 80 kg of binder show values over 200 kPa, for the binder bled of 100 kg -- over 350 kPa and for the binders of 120 kg of binder -- over 450 kPa as maximal values, Figure \ref{Fig:03}. Thus, the LKD-Cem and Ql-LKD show relatively quick strength development along with the increased amount of binder (cf. 80, 100 and 120 kg of binder). Moreover, whereas LKD-Cem mixture (bright red left corner of the triangle) shows the highest strength and at all sample ages, Ql-LKD (green right corner of the triangle) mixture shows the lowest values, Figure \ref{Fig:03}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_04.jpg}\\
+  \caption{Response surface with internal points showing shear strength after 28 days of curing at 7\degree C. The amount of binder $100 kg/m^3$. (a): 2D view; (b): 3D view}\label{Fig:04}
+\end{figure}
+
+The extended model shows a greater interaction between the different binder components, Figure \ref{Fig:04} a). A 3D presentation of the ternary plots is shown in Figure \ref{Fig:04} b), which follows the response surface methodology that evaluates the correlation between the explanatory variables (that is, binder components: cement, LKD and quicklime) and the response variable (shear strength). In this mixture, the positive interaction of the binder components was rather small compared to the previous case. The degree of explanation of the response surface was 98\%, which proves reliable results, Figure \ref{Fig:04}. 
+
+\subsubsection{Seismic measurements}
+
+Seismic measurements were performed based on the evaluated velocity of the elastic P-waves, according to the free-free resonant column method. Shear strength of the material was considered for the dimensioning of lime/cement columns. This means that different binder recipes were assessed according to the recorded shear strength in specimens. The connection between the P-wave velocity and the UCS is nonlinear and largely depend on the material composition of soil. The correlation between the P-wave velocity and shear strength of the stabilized soil is shown in Figure \ref{Fig:05}.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_05.jpg}\\
+  \caption{Shear strength as a function of P-wave velocity. (a): red circles indicate identified outliers. (b): outliers removed}\label{Fig:05}
+\end{figure}
+
+Figure \ref{Fig:05} a), presents the results of the measurements of P-wave velocity and shear strength. In addition to the variations in binder ratio and composition, curing time also varied in these experiments. There are also some obvious outliers which have been identified and removed from the correlation plot, Figure \ref{Fig:05} b). The results from the above measurements were used to estimate shear strength based on the measured P-wave velocity in the \emph{in situ} conditions, e.g., the crosshole measurements.
+
+Analysing the distribution of data values gives the following outcomes. The majority of data on shear strength is concentrated within the range of 65-250 kPa, which well corresponds to the P-wave velocity of 310-680 m/s. The increase in shear strength indicates the resistance to deformation by the effects from the tangential shear stress. In natural conditions this includes resistance to erosion.
+
+\subsection{Effects from the adhesives on jet grouted columns}
+
+In order to evaluate the effects from different binders on reinforcement of jet grouted columns, the tests of strength were carried out by CEMEX, according to the Swedish standard EN 196-1, Figure \ref{Fig:06} and Figure \ref{Fig:07}. Binder, water and a standard sand were used for testing \cite{SIS2016M}. In the other tests, we only used only binders and water, and in some samples added a mixture of clay. The results show that cement without the admixture of other binders gives the highest compressive strength, followed by a mixture of 50\% CEM II and 50\% LKD, and finally by a combinations with 50\% CEM II and 50\% CKD, which gave a similar result to the combination of 50\% CEM II and 30\% LKD and 20\% limestone filler. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_06.jpg}\\
+  \caption{Compressive strength of specimens with different binder combinations. PresafeP = CKD}\label{Fig:06}
+\end{figure}
+
+Figure \ref{Fig:07} shows the UCS as a function of cement content for varied curing time. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_07.jpg}\\
+  \caption{Compressive strength as a function of cement content for varied curing time}\label{Fig:07}
+\end{figure}
+
+As shown in Figure \ref{Fig:07}, the highest strength was recorded for the pure Cem II followed by the mixture 60\% Cem II and 40\% CKD. The mixture of 50\% CEM II in combination with 50\% CKD demonstrated the lowest value of compressive strength, Figure \ref{Fig:07}. 
+
+Figure \ref{Fig:08} shows the setting time and water requirement for different binder combinations were investigated by CEMEX according to the Swedish standard EN 196-3 \cite{SIS2016N}, Figure \ref{Fig:08}. Water demand was the highest for binder combinations 50\% CEM II and 50\% CKD and for 50\% CEM II, 30\% LKD and 20\% limestone filler. Water requirement for 50\% CEM II and 50\% LKD was the same as for pure CEM II. The bonding time varied from 165 to 250 minutes. The admixtures with 50\% LKD and 50\% CKD had a significantly longer setting time compared to the Cem II, Figure \ref{Fig:08}.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_08.jpg}\\
+  \caption{Water requirement and setting time for different binders. PresafeP = CKD}\label{Fig:08}
+\end{figure}
+
+Figure \ref{Fig:09} shows a comparison of the compressive strength of specimens stabilized with different recipes without adding clay admixture. Recipe A (100\% cement) shows the highest values (up to 20 MPa by sample 8) and always outperforms all the other recipes in terms of strength, which means that cement remains the most effective stabiliser for clay. Following that, the Recipe B (70\% cement, 30\% LKD) also shows high values with maximal achieved at sample 7 (13.8 MPa). The less effective was Recipe C with added 80\% cement and 20\% CKD, which shown the highest value of UCS as 8.8 MPa in sample 9. Finally, the least strength was demonstrated in Recipe D (70\% cement 30\% CKD) where the UCS values never exceeded 4 MPa with maximal values of 3.7 at sample 2 and the lowest UCS as 2.7 MPa at sample 3, respectively, Figure \ref{Fig:09}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_09.jpg}\\
+  \caption{Compilation of the compressive strength of the various binder combinations without mixing clay.}\label{Fig:09}
+\end{figure}
+
+Figure \ref{Fig:10} shows the compressive strength of samples stabilized with various binder recipes with different admixtures of clay during 28 days at 20\degree C. For binder recipe A, the UCS between 11.5 and 19.8 MPa was obtained for specimens consisting of binder and water, Figure \ref{Fig:10}. When clay was added into the mixture, the strength dropped to a minimum of 4 MPa for a mixture of 58\% clay, see Figure \ref{Fig:10}. For the binder recipe B without mixing clay, the compressive strength values were recorded between 5.9 and 13.3 MPa. 
+
+At a clay mixture of 58\%, the compressive strength dropped to ca. 3.2 MPa at its lowest value. For the binder recipe C, the compressive strength between 5.3 and 8.8 MPa was obtained without adding clay into the mixture. At the same time, when adding clay into the mixture up to 58\%, the compressive strength dropped to 3.6 MPa. For binder recipe D without clay mixing, the values of compressive strength were 2.8 and 4.3 MPa, Figure \ref{Fig:10}. 
+
+\begin{figure*}[h!]
+\centering
+\includegraphics[width=0.90\textwidth]{Fig_10}
+\caption{Compressive strength of sample stabilized with various binder recipes with different admixtures of clay during 28 days at 20\degree C. \textbf{A}: CEM II/A-M; \textbf{B}: 70\% CEM II/A-M and 30\% LKD; \textbf{C}: 80\% CEM II/A-M and 20\% CKD; \textbf{D}: 70\% CEM II/A-M and 30\% CKD.}
+\label{Fig:10}
+\end{figure*}
+
+Figure \ref{Fig:11} shows a nonlinear dependance of the P-wave velocity from curing time for recipes A to D. Here the Recipe A (100\% cement) shows the most effective results with outperforming the other blended mixtures with the P-wave velocity at 2350 m/s on day \nth{28}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_11.jpg}\\
+  \caption{P-wave velocity as a function of curing time at 20\degree C. Each P-wave velocity determination is an average of measurements on five specimens.}\label{Fig:11}
+\end{figure}
+
+The specimen stabilised by Recipe B (70\% cement, 30\% LKD) demonstrated P-wave velocity as 2350 m/s achieved on the same day. Respectively, Recipe C (80\% cement, 20\% CKD) and Recipe D (70\% cement 30\% CKD) demonstrated P-wave velocity 1900 m/s and 1550, respectively.  All the specimens demonstrated a sharp increase of UCS which corresponds to P-wave speed during the first 3 days of curing, after which the behaviour stabilized, si the graphs demonstrated a logarithmic growth in curve of correlation between the P-wave speed and curing time. When comparing the performance of binder blends, one can note that Recipe B (70\% cement, 30\% LKD) demonstrated better results for P-wave velocity as a function of curing time, comparing to the others, Figure \ref{Fig:11}.
+
+Figure \ref{Fig:12} shows a compilation of measured P-wave velocities and compressive strengths for the different binder recipes. Considering the empirical distribution of the data points on the regression line, Figure Figure \ref{Fig:12} depicts that Recipe D (70\% cement 30\% CKD) show sthe lowest P-wave velocity (1600 m/s) which corresponds to the 4.0-4.4 MPa of UCS. In the next example, Recipe C (80\% cement, 20\% CKD) shows the P-wave velocity varying from 1900 to 1950 m/s with UCS at 7.5 to 9 MPa. Following that, the specimens stabilized with Recipe B (70\% cement, 30\% LKD) achieved much higher UCS between 10.7 to 13.8 MPa with corresponding P-wave velocity at 2210-2300 m/s. Finally, a quick visual inspection shows that the Recipe A (100\% cement) shows the best performance in terms of clay stabilization with tested samples having UCS from 14.4 to 20.0 MPa and a corresponding P-wave velocity between 2350 to 2400 m/s, Figure \ref{Fig:12}.
+
+Figure \ref{Fig:13} shows heat development with the two different binder combinations as a function of time. The results show significantly lower values for binders with 50\% CEM II and 50\% LKD compared to 100\% CEM II. However, both mixtures show a similar time course from mixing until the maximum temperature is obtained. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_12.jpg}\\
+  \caption{Compressive strength as a function of P-wave velocity for recipes A to D. Samples stored for 28 days at 20\degree C.}\label{Fig:12}
+\end{figure}
+
+The double experiments demonstrated a good repeatability with approved results in the repeated experiments with samples. The results from the performed temperature development results for the binder slurry are shown in Figure \ref{Fig:13}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_13.jpg}\\
+  \caption{Heat development with two different binder combinations as a function of time}\label{Fig:13}
+\end{figure}
+
+\subsection{Simulation of seismic measurements}
+Simulation of results from seismic measurements were performed in the laboratory and show the natural frequency analyses which were used to determine the dynamic inherent properties of a soil system without sleeves, and to identify its resonant frequencies as eigen values. It shows the frequency at which the amplitude of vibration is the highest when exited by external means, in this cases, using simulation software. A sleeve without soil had natural frequencies in the same order of magnitude as the sample itself, which shown biased plots, Figure \ref{Fig:14}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_14.jpg}\\
+  \caption{Demonstration of the simulated different modes of the natural frequency for pipe sleeves}\label{Fig:14}
+\end{figure}
+
+
+Figure \ref{Fig:14} shows the inverse task, which shows simulation of different modes of natural frequency for pipe sleeves without soil,  i.e., empty sleeves. It is shown for the three cases: 1707 Hz, 1767 Hz and 3870 Hz, respectively. The first case demonstrated the uniform pattern of colours. The modelled pipe corresponds to the height and diameter of the real pipe and its natural frequencies. In the second case, the frequencies are higher in the upper and lower parts of the pipe, and the third case has a irregular form of the pipe column, Figure \ref{Fig:14}.
+
+Figure \ref{Fig:15} shows simulated natural frequencies for the specimens without a sleeve using modelled form. By simulating the test bodies placed in sleeves, natural frequencies are used as a dataset. The model can generally be described as the simulated natural frequencies for specimens without sleeve for the test bodies which have a length of 130.7 mm and varied frequencies, so that the phenomenon of fundamental lowest frequency exhibits its effects at the different values of frequency: 1070 Hz, 2014 Hz, 2208 and 3393 Hz, Figure \ref{Fig:15}. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.40\textwidth]{Fig_15.jpg}\\
+  \caption{Calculated natural frequencies for specimens without sleeve. The test bodies have a length of 130.7 mm.}\label{Fig:15}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.45\textwidth]{Fig_16.jpg}\\
+  \caption{Simulated natural frequencies for sample in sleeve. Sample body 130.7 and sleeve 170 mm.}\label{Fig:16}
+\end{figure}
+
+Figure \ref{Fig:16} shows the simulation plots that measured natural frequencies which originated from the parts of the sleeves that contain soil material. This is performed to estimate own frequencies of the pipes and correct possible bias in evaluating P-wave velocities while testing stabilized soil samples in order to predict and avoid resonance with the excitation vibration. Using simulation software, the values were all visualized as plots in a 3D view making it straightforward to interpret, Figure \ref{Fig:16}. 
+
+\section{Discussion}
+Subject to the diameter of the grouting columns and percentage of lime/cement stabilizers, a hundred thousand of tons of cement are required for deep stabilization per year for construction industry in Sweden. This necessarily involves significant financial investments for production of binder materials. To reduce this cost, industrial by-products, such as LKD and Ql are used to replace a part of pure cement. Such a replacement enables not only to economise the costs of constructions works in industry, but also has sound technical and environmental benefits. In this paper, we demonstrated that the combinations of LKD, Ql and cement instead of pure cement has positive effects on deep soil stabilization by jet grouting.
+
+The laboratory testing showed a high repeatability between trials with various binder combinations. The variations in compressive strength/shear strength increased slightly along with the increased strength, which is expected, since minor inaccuracies in the test specimens have a greater effect. For comparison with various binder amounts, the analysis was performed with the same number of tests for 80, 100 and 120 kg of binder. The requirements for the lime/cement columns \emph{in situ} are achieved during tests: a minimum shear strength of 150 kPa after 28 days. This is ensured by the requirement for the laboratory packed samples which is set to > 200 kPa. The P-wave velocity is an index for the changes in strength. It has been measured using ceramic shear ICP® accelerometer and vibration induced by a hammer and presented as plots showing correlation between the P-wave velocity and the UCS.
+
+Several of the mixtures that contained both cement, quicklime and LKD met the requirements of at least 200 kPa after 28 days of storage. At a storage temperature of 7\degree, final strength is reached at 80 days (560 degree days) at the earliest, which demonstrated excellent performance. For jet grouting, the \emph{in situ} requirement is that a compressive strength has 2 MPa after 28 days of curing. For the laboratory processed samples, the requirement is set to at least 3 MPa. The graphs demonstrated that binders with recipes A and B passed the requirement of at least 3 MPa after 28 days of curing even with a mixture of 58\% clay. For binder of recipe C, the mean UCS was 2.77 MPa with a clay mix of 58\%. 
+
+As a result of the performed works, soil specimens received enhanced geotechnical properties of strength: increased UCS (compressive strength) and bond shear strength, as well as the related parameters, such as lower permeability, and reduced compressibility. 
+
+\section{Conclusions}
+
+The construction industry is strongly dependent on the advanced technologies of soil improvement. The most challenging issue in construction techniques consists in finding the optimal solutions for the best results in soil stabilization. While the recommendations regarding ground improvement and reviews of general standards of soil testing are available in the existing technical engineering documentation, more complex issues related to the nonlinear analysis of soil behaviour and strength properties tested by geophysical methods require special studies. 
+
+In a response to this need, the optimised design of experiments on soil improvement workflow and the quality control for strength in soil stabilized by various combinations of binders monitored using advanced statistical methods of data processing are presented in this paper. Several simplex experiments were performed on soil-binder mixing equivalent to 80, 100 and 120 kg of binder per $m^3$ of clay. This study presented the issue of application of geophysical testing of compression wave velocity (P-wave) and measuring the shear bond and compressive strength (UCS) of soil specimens. The focus is on presenting the three different binders and evaluating the behaviour of soil using various amounts and ratio of binders used as stabilizing agents: Cem II/A contained of Portland clinker and limestone), burnt lime and LKD. The CKD was applied for extra tests in jet grouting.
+
+The stability of construction foundation is dependent on the soil strength. Due to the stabilization, the strength increases over time of curing, thus improving the present conditions of the ground and mitigating future risks of the instability of construction on a weak ground. However, the performance of stabilization should be evaluated and assessed according to the standards and accepted threshold values of UCS. Using geophysical methods for evaluating strength by measuring P-wave velocity is a non-destructive approach which enables to mitigate the costs of works and to replace the time-consuming and technically difficult workflow of measuring strength in real time conditions by advanced geophysical methods.
+
+The applied geophysical method of measuring P-wave velocities is particularly efficient in terms of production costs. In fact, the production costs of construction industry related to stabilization of foundations scale progressively with the increased amount of binders and workload since the methodology of testing soil strength is a time-consuming and highly laborious work. With this regard, the application of the geophysical methods reduces the expenses in the industrial projects and enables to test strength using non-destructive methods. In addition, despite the best performance of cement as a pure binder, variations with other admixtures may help in reducing negative environmental effects from cement and assists with utilisation of the industrial by-products using as auxiliary binders.
+
+%\newpage
+\vspace{5pt}
+
+\noindent
+\textbf{Author contributions}: Both authors wrote text of the manuscript, performed data analysis, literature review, discussion and interpretation of the results. Dr. Per Lindh supervised the project. Both authors are responsible for the content of this manuscript, read and accepted the paper and approved its submission.
+
+\vspace{5pt}
+
+\noindent
+\textbf{Conflict of interest}: The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest
+
+\begin{acknowledgement}
+We thank Nils Rydén for his help with the simulation modelling using COMSOL Multiphysics software. We appreciate the valuable comments of the two anonymous reviewers which improved the initial version of this manuscript. 
+\end{acknowledgement}
+
+%\newpage
+%\bibliographystyle{IEEEtran}
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{plain}
+\bibliography{References_NE.bib}
+%\nocite*{}
+
+\end{document}
