@@ -16,6 +16,7 @@
 \usepackage{tabularx}
 \graphicspath{{figures/}} % path to folder with figures
 %\usepackage[usenames, dvipsnames]{color}
+\usepackage{soul}
 
 \begin{document}
  
@@ -104,8 +105,22 @@ In such a way, nine different binder combinations were formed from the mix of th
 
 The curing time for the reference samples (cement/lime 50/50) were determined to be 7, 14, 21 and 28 days. Extra reference tests have been carried out for calibration of seismic measurement in relation to compressive strength on days 7 and 14, Figure \ref{Fig:01} b). Moreover, some extra specimens were produced for compression tests on day 80. The choice of 80 days is explained by the fact that the samples were stored at T=7\degree C, which corresponds to the average ground temperature in central Sweden in the tested study area, . At this storage temperature and a curing time of 80 days, this corresponds to the equivalent of 560 \degree days, which corresponds to 28 days of storage at 20°C. The tests were carried out according to the laboratory guidance of the SGI applied in previous experiments \cite{Lindh2021a} and existing methods of using lime/cement columns for deep column stabilization \cite{CARLSTEN1996355}.
 
+%\begin{figure}[H]
+ %\centering
+  %  \includegraphics[width=0.45\textwidth]{IMG_2631.jpg}\\
+  %\caption{A process of seismic measurements which evaluates P-wave velocity of the specimen. Photo source: Per Lindh.}\label{Fig:seis}
+%\end{figure}
+
+\begin{figure*}[h!]
+ \centering
+    \includegraphics[width=0.90\textwidth]{IMG_2631.jpg}
+  \caption{A process of seismic measurements which evaluates P-wave velocity of the specimen. Photo source: Per Lindh.}\label{Fig:seis}
+\end{figure*}
+
 \subsection{Seismic measurements}
-Seismic measurements were performed as a free-free resonant column test measuring P-wave velocity of the specimen using existing methodology applied in previous studies \citep{Lindh202210,Lindh202102}. The measurements were used on all specimens modelled in previous step in a simplex test. By producing extra specimens that were used as reference specimens, i.e., for the determination of both P-wave velocity and shear strength on days 7 and 14, a reference to the P-wave velocity of the remaining specimens was used for a correlation to the shear strength of the samples. The correlation between the P-waves and UCS has previosly been used for surface stabilized samples \cite{Rydenetal2006,Rydenetal2016}. 
+Seismic measurements were performed as a free-free resonant column test measuring P-wave velocity of the specimen using existing methodology applied in previous studies \citep{Lindh202210,Lindh202102}. \hl{The data were processed using software for seismic measurements which records the P-wave speed from the obtained data and performs graphical plotting, Figure }\ref{Fig:seis}. 
+
+The measurements were used on all specimens modelled in previous step in a simplex test. By producing extra specimens that were used as reference specimens, i.e., for the determination of both P-wave velocity and shear strength on days 7 and 14, a reference to the P-wave velocity of the remaining specimens was used for a correlation to the shear strength of the samples. The correlation between the P-waves and UCS has previosly been used for surface stabilized samples \cite{Rydenetal2006,Rydenetal2016}. 
 
 The velocity of P waves in isotropic and homogeneous solids, such as soil, is given by the following formula: 
 
@@ -113,9 +128,7 @@ The velocity of P waves in isotropic and homogeneous solids, such as soil, is gi
 	\upsilon_p=\sqrt{\frac{K+\frac{4}{3}\mu}{\rho} }
 \end{equation}
 
-where \emph{K} is the bulk modulus (incompressibility), $\mu$ is the shear modulus (rigidity), $\rho$ is the density of soil through which the wave propagates \cite{Fowler}. From this equation it is seen that P-wave velocity depends on key material characteristics -- rigidity, compressibility and density, which in turn are related to strength characteristics.
-
-The P-wave is the axial wave passing through the cylindrical specimen. The vibration was excited by a hammer which stroke on one end of the specimen and measured as P-waves by the accelerator device on another end, respectively. The P-wave has been correlated against the shear strength of the stabilized material. Coupling between the P-wave and the constrained modulus of the material $M_x$, shows the elastic moduli which describes isotropic homogeneous materials, as represented by the Equation \ref{eq2}.
+where \emph{K} is the bulk modulus (incompressibility), $\mu$ is the shear modulus (rigidity), $\rho$ is the density of soil through which the wave propagates \cite{Fowler}. From this equation it is seen that P-wave velocity depends on key material characteristics -- rigidity, compressibility and density, which in turn are related to strength characteristics. The P-wave is the axial wave passing through the cylindrical specimen. The vibration was excited by a hammer which stroke on one end of the specimen and measured as P-waves by the accelerator device on another end, respectively. The P-wave has been correlated against the shear strength of the stabilized material. Coupling between the P-wave and the constrained modulus of the material $M_x$, shows the elastic moduli which describes isotropic homogeneous materials, as represented by the Equation \ref{eq2}.
 
 \begin{equation} \label{eq2}
 	M_x=\rho_x V_P^2
@@ -208,7 +221,7 @@ In order to evaluate the effects from different binders on reinforcement of jet 
 \begin{figure}[H]
  \centering
     \includegraphics[width=0.45\textwidth]{Fig_06.jpg}\\
-  \caption{Compressive strength of specimens with different binder combinations. PresafeP = CKD}\label{Fig:06}
+  \caption{Compressive strength of specimens with different combinations \hl{of binders: Cement (CEM-II), CKD, LKD and LS.}}\label{Fig:06}
 \end{figure}
 
 Figure \ref{Fig:07} shows the UCS as a function of cement content for varied curing time. 
@@ -221,13 +234,15 @@ Figure \ref{Fig:07} shows the UCS as a function of cement content for varied cur
 
 As shown in Figure \ref{Fig:07}, the highest strength was recorded for the pure Cem II followed by the mixture 60\% Cem II and 40\% CKD. The mixture of 50\% CEM II in combination with 50\% CKD demonstrated the lowest value of compressive strength, Figure \ref{Fig:07}. 
 
-Figure \ref{Fig:08} shows the setting time and water requirement for different binder combinations were investigated by CEMEX according to the Swedish standard EN 196-3 \cite{SIS2016N}, Figure \ref{Fig:08}. Water demand was the highest for binder combinations 50\% CEM II and 50\% CKD and for 50\% CEM II, 30\% LKD and 20\% limestone filler. Water requirement for 50\% CEM II and 50\% LKD was the same as for pure CEM II. The bonding time varied from 165 to 250 minutes. The admixtures with 50\% LKD and 50\% CKD had a significantly longer setting time compared to the Cem II, Figure \ref{Fig:08}.
+Figure \ref{Fig:08} shows the setting time and water requirement for different binder combinations were investigated by CEMEX according to the Swedish standard EN 196-3 \cite{SIS2016N}\hl{. }
 
 \begin{figure}[H]
  \centering
     \includegraphics[width=0.45\textwidth]{Fig_08.jpg}\\
-  \caption{Water requirement and setting time for different binders. PresafeP = CKD}\label{Fig:08}
+  \caption{Water requirement and setting time for different combinations \hl{of binders: Cement (CEM-II), CKD, LKD and LS.}}\label{Fig:08}
 \end{figure}
+
+Water demand was the highest for binder combinations 50\% CEM II and 50\% CKD and for 50\% CEM II, 30\% LKD and 20\% limestone filler. Water requirement for 50\% CEM II and 50\% LKD was the same as for pure CEM II. The bonding time varied from 165 to 250 minutes. The admixtures with 50\% LKD and 50\% CKD had a significantly longer setting time compared to the Cem II, Figure \ref{Fig:08}. \hl{Four tested combinations of binders include the following mixtures (from left to right in Figure} \ref{Fig:08})\hl{: 1) 100\% Cement (CEM II); 2) 50\%CEM II /50\% CKD (PresafeP); 3) 50\%CEM II/50\% LKD (Spectra); and 4) 50\%CEM II / 30\%Spectra(LKD)/20\%LSfiller}
 
 Figure \ref{Fig:09} shows a comparison of the compressive strength of specimens stabilized with different recipes without adding clay admixture. Recipe A (100\% cement) shows the highest values (up to 20 MPa by sample 8) and always outperforms all the other recipes in terms of strength, which means that cement remains the most effective stabiliser for clay. Following that, the Recipe B (70\% cement, 30\% LKD) also shows high values with maximal achieved at sample 7 (13.8 MPa). The less effective was Recipe C with added 80\% cement and 20\% CKD, which shown the highest value of UCS as 8.8 MPa in sample 9. Finally, the least strength was demonstrated in Recipe D (70\% cement 30\% CKD) where the UCS values never exceeded 4 MPa with maximal values of 3.7 at sample 2 and the lowest UCS as 2.7 MPa at sample 3, respectively, Figure \ref{Fig:09}. 
 
